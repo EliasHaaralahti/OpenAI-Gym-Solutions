@@ -1,6 +1,6 @@
 # OpenAI-Gym-Solutions - [CartPole-v1](https://github.com/openai/gym/wiki/CartPole-v0)
 
-![](CartPoleSolved.gif)
+![](../Extra/01.CartPoleSolved.gif)
 
 ## Versions:
 

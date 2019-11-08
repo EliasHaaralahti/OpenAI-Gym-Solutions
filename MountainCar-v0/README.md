@@ -1,6 +1,6 @@
 # OpenAI-Gym-Solutions - [MountainCar-v0](https://github.com/openai/gym/wiki/MountainCar-v0)
 
-![](MountainCarSolved.gif)
+![](../Extra/02.MountainCarSolved.gif)
 
 ## Versions:
 

@@ -1,5 +1,7 @@
 # OpenAI-Gym-Solutions - FrozenLake8x8-v0
 
+![](../Extra/03.FrozenLakeSolved.gif)
+
 ## Versions:
 
 ### Q-learning with Q-table (Q-learning.py):
