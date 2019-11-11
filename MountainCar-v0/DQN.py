@@ -10,7 +10,7 @@ import numpy as np
 class DQN:
     def __init__(self, env):
         # Env for input, output dimensions
-        self.env=env
+        self.env = env
 
         # Epsilon for exploitation/exploration.
         self.epsilon = 1
@@ -117,7 +117,7 @@ EPOCHS_BEFORE_RENDER = 400
 
 if __name__ == "__main__":
     env = gym.make(ENVIRONMENT)
-    agent=DQN(env=env)
+    agent = DQN(env=env)
 
     # How many challenges we have solved
     total_solved = 0

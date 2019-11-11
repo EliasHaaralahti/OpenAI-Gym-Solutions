@@ -4,7 +4,7 @@
 
 ## Versions:
 
-### Plain neural network implementation (DQN.py):
+### Deep Q-learning (DQN.py):
 - DQN implementation with a target network.
 
 # Running
