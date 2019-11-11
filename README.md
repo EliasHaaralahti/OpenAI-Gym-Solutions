@@ -1,6 +1,6 @@
 # OpenAI-Gym-Solutions
 
-The aim of this project is to solve all [OpenAI Gym](https://gym.openai.com/) environments while learning about AI / Reinforcement learning.
+The aim of this project is to solve [OpenAI Gym](https://gym.openai.com/) environments while learning about AI / Reinforcement learning.
 
 The results may be more or less optimal and may vary greatly in technique, as I'm both learning and experimenting with these environments.
 
@@ -13,7 +13,19 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 
 
 ## In-progress (methods):
-- Will start a new one soon
+- LunarLander
+
+## Planning to do (in no specific order):
+- CarRacing
+- Acrobot
+- Pendulum
+- BipedalWalker(Hardcode?)
+- Pong
+- SpaceInvaders
+- Breakout
+- Ant
+- Humanoid
+- FetchPickAndPlace
 
 ## Requirements
 - Python3, pip3.
