@@ -13,7 +13,7 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 
 
 ## In-progress (methods):
-- LunarLander
+- LunarLander (DQN).
 
 ## Planning to do (in no specific order):
 - CarRacing
