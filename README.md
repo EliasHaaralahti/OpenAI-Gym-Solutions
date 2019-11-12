@@ -8,12 +8,13 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 - CartPole-v1 (Plain NN, DQN).
 - MountainCar-v0 (DQN)
 - FrozenLake8x8-v0 (Q-table).
+- LunarLander (DQN).
 
 ![](Extra/CombinedSolves.gif)
 
 
 ## In-progress (methods):
-- LunarLander (DQN, DQN with DDPG for continuous environment).
+- LunarLander (DQN with DDPG for continuous environment/actions).
 
 ## Planning to do (in no specific order):
 - CarRacing
