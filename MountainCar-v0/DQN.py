@@ -110,23 +110,37 @@ class DQN:
 
         self.model.fit(states, targets, epochs=1, verbose=0)
 
+    def save(this, name):
+        this.model.save_weights('./' + name + '.h5')
+
+    def load(this, name):
+        this.model.load_weights('./' + name)
+
 EPOCHS = 500
 STEPS = 200
 ENVIRONMENT = "MountainCar-v0"
-EPOCHS_BEFORE_RENDER = 400
+EPOCHS_BEFORE_RENDER = 0
 
 if __name__ == "__main__":
     env = gym.make(ENVIRONMENT)
     agent = DQN(env=env)
 
+    agent.load("mountaincar-401.h5")
+    print("loaded trained model")
+
     # How many challenges we have solved
     total_solved = 0
+    save = False
     for games in range(EPOCHS):
         state = env.reset().reshape(1,2)
         total_reward = 0
 
         # Start rendering after 400 games.
         if games > EPOCHS_BEFORE_RENDER:
+            if save:
+                agent.save("mountaincar-" + str(games))
+                print("Saved model")
+                save = False
             env.render()
 
         for i in range(STEPS):
