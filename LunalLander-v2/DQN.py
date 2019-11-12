@@ -119,14 +119,14 @@ class DQN:
 EPOCHS = 1000
 #STEPS = 200
 ENVIRONMENT = "LunarLander-v2"
-EPOCHS_BEFORE_RENDER = 500
+EPOCHS_BEFORE_RENDER = 0
 
 if __name__ == "__main__":
     env = gym.make(ENVIRONMENT)
     agent = DQN(env=env)
     save = True
 
-    agent.load("save_270.23018030436333.h5")
+    agent.load("save_275.86056079721334.h5")
 
     # How many challenges we have solved
     total_solved = 0
