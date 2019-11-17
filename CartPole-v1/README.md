@@ -9,8 +9,7 @@
 
 ### DQN implementation (DQN.py):
 - Use Deep Q-learning to continuously train the agent.
-- Results vary and there are still things to finish. This model still seems fairly unstable, however it can easily reach 100-200 score early. However the model can also reach 300-500 with some training (as early as 25 epochs). Will improve this later with target models etc.
 
 # Running
-- Make sure virtual enviroment is active.
+- Make sure virtual enviroment is active and working directory is inside the environment folder.
 - Run the version you want using python3 FILENAME.

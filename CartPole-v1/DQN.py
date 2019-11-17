@@ -21,7 +21,7 @@ if __name__ == "__main__":
             # env.render()
             action = agent.predict_action(state)
             next_state, reward, done, _ = env.step(action)
-            agent.saveReplay(state, action, reward, next_state, done)
+            agent.save_replay(state, action, reward, next_state, done)
             agent.train()
 
             score += reward
@@ -31,4 +31,4 @@ if __name__ == "__main__":
                 print(f"Game: {game}, Score: {score}")
                 break
 
-        agent.updateWeights()
+        agent.update_weights()

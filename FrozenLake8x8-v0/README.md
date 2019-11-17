@@ -8,5 +8,5 @@
 - Basic Q-learning with Q-table implemention for a simple challenge. Right now with the current setup the average solves per 10,000 episodes seems to be around 6000/10,000.
 
 # Running
-- Make sure virtual enviroment is active.
+- Make sure virtual enviroment is active and working directory is inside the environment folder.
 - Run the version you want using python3 FILENAME.

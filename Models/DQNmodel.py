@@ -36,7 +36,7 @@ class DQN:
         # More stable approach.
         self.targetModel = self.build_network()
         # Initialize targetModel weights with model weights 
-        self.updateWeights()
+        self.update_weights()
 
     # Create network
     def build_network(self):
@@ -44,10 +44,10 @@ class DQN:
         input_shape = self.env.observation_space.shape
 
         model = Sequential()
-        model.add(Dense(24, activation='relu', input_shape=input_shape))
-        model.add(Dense(48, activation='relu'))
-        model.add(Dense(self.env.action_space.n,activation='linear'))
-        model.compile(loss='mse', optimizer=Adam(lr=self.learning_rate))
+        model.add(Dense(24, activation = 'relu', input_shape = input_shape))
+        model.add(Dense(48, activation = 'relu'))
+        model.add(Dense(self.env.action_space.n, activation = 'linear'))
+        model.compile(loss = 'mse', optimizer=Adam(lr = self.learning_rate))
         return model
 
 
@@ -64,12 +64,12 @@ class DQN:
         return action
 
     # Save replay to memory
-    def saveReplay(self, currentState, action, reward, new_state, done):
+    def save_replay(self, currentState, action, reward, new_state, done):
         new_state = new_state.reshape(1, len(self.env.observation_space.low) )
         self.replayBuffer.append([currentState, action, reward, new_state, done])
 
     # Sync targetMode land model
-    def updateWeights(self):
+    def update_weights(self):
         self.targetModel.set_weights(self.model.get_weights())
 
     def train(self):
@@ -121,3 +121,5 @@ class DQN:
         self.model.load_weights('./' + name)
         # Set exploration to min
         self.epsilon = self.epsilon_min
+        # Set target model weights to match model
+        self.update_weights()
