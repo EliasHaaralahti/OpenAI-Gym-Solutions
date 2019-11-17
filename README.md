@@ -30,12 +30,11 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 
 ## Requirements
 - Python3, pip3.
-- Virtualenv (**pip3 install virtualenv**). Version 16.7.5 used for development.
 
 ## Setup 
 - Clone the repository.
 - Change directory to the project root folder.
-- Create a new virtual environment with **virtualenv -p python3 venv**.
+- Create a new virtual environment with **python3 -m venv venv**.
 - Activate the virtual environment **source venv/bin/activate**.
 - Install requirements: **pip3 install -r requirements.txt**.
 - Follow the instructions in each environment for running specific models.
