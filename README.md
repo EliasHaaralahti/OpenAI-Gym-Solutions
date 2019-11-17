@@ -45,5 +45,3 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 
 ## Things I will implement as soon as possible: 
 - Collect and document better statistics for each model/environment to easily view/compare models and their results.
-- Save top performing models. Especially when training takes time.
-- If loading model, use min explore.
