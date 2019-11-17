@@ -15,12 +15,12 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 
 ## In-progress (methods):
 - LunarLander (DQN with DDPG for continuous environment/actions).
+- BipedalWalker(Hardcode?) (DQN)
 
 ## Planning to do (in no specific order):
 - CarRacing
 - Acrobot
 - Pendulum
-- BipedalWalker(Hardcode?)
 - Pong
 - SpaceInvaders
 - Breakout
