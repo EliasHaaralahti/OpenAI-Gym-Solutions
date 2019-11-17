@@ -1,6 +1,9 @@
 import gym
-import numpy as np
 import time
+
+import sys
+sys.path.append("..")
+from Models.QModel import QAgent
 
 TRAINING_EPOCHS = 20_000
 TRAINING_SHOW_EVERY = 1000
@@ -11,27 +14,6 @@ SIM_STEPS = 20000
 # into a hole over 100 consecutive trials.
 # Reward is 0 for every step taken, 0 for falling 
 # in the hole, 1 for reaching the final goal
-
-class QAgent:
-    def __init__(self):
-        self.Q = self.build_q_table()
-        self.eta = .628
-        self.gma = .9
-        
-    def build_q_table(self):
-        Q = np.zeros([env.observation_space.n, 
-            env.action_space.n])
-        return Q
-
-    def update_q_table(self, state, action, reward, new_state):
-        self.Q[state, action] = self.Q[state, action] + self.eta*(reward + self.gma*np.max(self.Q[new_state,:]) - self.Q[state,action])
-
-    def predict_random(self, state,i):
-        # Implement epsilon to do random and less random actions?
-        return np.argmax(self.Q[state,:] + np.random.randn(1,4)*(1./(i+1)))
-
-    def predict(self, state):
-        return np.argmax(self.Q[state,:])
 
 def train(env, agent):
     rewards = []
@@ -97,7 +79,7 @@ def test(env, agent):
 
 if __name__ == "__main__":
     env = gym.make("FrozenLake8x8-v0")
-    agent = QAgent()
+    agent = QAgent(env)
 
     print("Starting training")
     train(env, agent)

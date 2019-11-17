@@ -30,8 +30,9 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 
 ## Requirements
 - Python3, pip3.
+- venv **apt install python3-venv**
 
-## Setup 
+## Setup
 - Clone the repository.
 - Change directory to the project root folder.
 - Create a new virtual environment with **python3 -m venv venv**.
@@ -45,3 +46,4 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 ## Things I will implement as soon as possible: 
 - Collect and document better statistics for each model/environment to easily view/compare models and their results.
 - Save top performing models. Especially when training takes time.
+- If loading model, use min explore.
