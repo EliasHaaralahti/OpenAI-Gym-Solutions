@@ -59,7 +59,7 @@ class DQN:
         if np.random.rand() < self.epsilon:
             action = np.random.randint(0, self.env.action_space.n)
         else:
-            action=np.argmax(self.model.predict(state)[0])
+            action = np.argmax(self.model.predict(state)[0])
 
         return action
 

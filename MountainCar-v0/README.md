@@ -8,5 +8,5 @@
 - DQN implementation with a target network.
 
 # Running
-- Make sure virtual enviroment is active.
+- Make sure virtual enviroment is active and working directory is inside the environment folder.
 - Run the version you want using python3 FILENAME.

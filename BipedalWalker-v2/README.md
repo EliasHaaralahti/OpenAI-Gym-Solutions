@@ -4,8 +4,8 @@
 
 ## Versions:
 
-### Deep Q-learning (DQN.py):
-- DQN implementation with a target network.
+### None yet (None):
+
 
 # Running
 - Make sure virtual enviroment is active.

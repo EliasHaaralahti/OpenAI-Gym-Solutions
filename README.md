@@ -30,7 +30,6 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 
 ## Requirements
 - Python3, pip3.
-- venv **apt install python3-venv**
 
 ## Setup
 - Clone the repository.
@@ -43,5 +42,5 @@ The results may be more or less optimal and may vary greatly in technique, as I'
 ## Update dependencies
 - **pip3 freeze > requirements.txt**
 
-## Things I will implement as soon as possible: 
+## Things to be implemented: 
 - Collect and document better statistics for each model/environment to easily view/compare models and their results.
